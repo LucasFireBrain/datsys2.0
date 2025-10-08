@@ -1,0 +1,14 @@
+{
+  "name": "PEEK Case",
+  "subfolders": [
+    "DICOM",
+    "Slicer",
+    "STL",
+    "Blender",
+    "Exports",
+    "Docs"
+  ],
+  "files": {
+    "README.txt": "PEEK project initialized. Use Slicer for segmentation and Blender for implant design."
+  }
+}

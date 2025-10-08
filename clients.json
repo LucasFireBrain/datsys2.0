@@ -1,0 +1,44 @@
+{
+  "DVE": {
+    "id": "DVE",
+    "name": "David Veizaga",
+    "email": "david@example.com",
+    "phone": "12345678",
+    "contact": "Pablo Romero",
+    "notes": "From Bolivia",
+    "projects": []
+  },
+  "LPZ": {
+    "id": "LPZ",
+    "name": "Luis Perez",
+    "email": "luis@example.com",
+    "phone": "123456",
+    "contact": "",
+    "notes": "Parroquial de SB",
+    "projects": [
+      "251001-LPZ-X1"
+    ]
+  },
+  "HEX": {
+    "id": "HEX",
+    "name": "Hexamod",
+    "email": "lucas@hexamod.cl",
+    "phone": "+123456789",
+    "contact": "Lucas",
+    "notes": "Me",
+    "projects": [
+      "251003-HEX-CUSTOM1"
+    ]
+  },
+  "MDI": {
+    "id": "MDI",
+    "name": "Marlene D\u00edaz",
+    "email": "",
+    "phone": "",
+    "contact": "",
+    "notes": "San Borja",
+    "projects": [
+      "PA7-MDI-EH0"
+    ]
+  }
+}
