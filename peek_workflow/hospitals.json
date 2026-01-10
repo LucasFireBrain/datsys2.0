@@ -1,0 +1,126 @@
+{
+  "ABA": {
+    "codigo": "ABA",
+    "nombre": "Clínica Alemana Lo Barnechea",
+    "direccion": "Av. José Alcalde Délano 12205, Lo Barnechea, Región Metropolitana",
+    "horario_atencion": "08:30–13:00",
+    "esterilizacion": "Vendaje (entrada despachador)",
+    "piso_pabellon": "",
+    "dias_anticipacion": "",
+    "contactos": {
+      "recepcion": "",
+      "esterilizacion": "",
+      "pabellon": "",
+      "finanzas": "",
+      "compras": ""
+    },
+    "notas": "Estacionamiento Proveedores (Gratis) -1"
+  },
+  "AC2": {
+    "codigo": "AC2",
+    "nombre": "Clínica AC2",
+    "direccion": "Av. Las Condes 11700, Vitacura, Región Metropolitana",
+    "horario_atencion": "Hasta las 12:00",
+    "esterilizacion": "No, se entrega ahí",
+    "piso_pabellon": "Torre A piso 13",
+    "dias_anticipacion": "24–48 horas",
+    "contactos": {},
+    "notas": "Estacionamiento Gratis"
+  },
+  "ARC": {
+    "codigo": "ARC",
+    "nombre": "Clínica Lo Arcaya",
+    "direccion": "Av. Las Condes 11283, piso 4, Las Condes, Región Metropolitana",
+    "horario_atencion": "",
+    "esterilizacion": "No, se esteriliza en CLC",
+    "piso_pabellon": "Piso 5",
+    "dias_anticipacion": "24 horas",
+    "contactos": {
+      "esterilizacion": "950173738 (Osvaldo)",
+      "pabellon": "950173738 (Osvaldo)"
+    },
+    "notas": "Estacionamiento Gratis (-5)"
+  },
+  "AVI": {
+    "codigo": "AVI",
+    "nombre": "Clínica Alemana Vitacura",
+    "direccion": "Av. Manquehue Nte. 1410, Vitacura, Región Metropolitana",
+    "horario_atencion": "Hasta las 13:00",
+    "esterilizacion": "Vendaje (-2)",
+    "piso_pabellon": "",
+    "dias_anticipacion": "",
+    "contactos": {},
+    "notas": "Estacionamiento Gratis 1 hora, entrega vendaje en -1"
+  },
+  "CON": {
+    "codigo": "CON",
+    "nombre": "Clínica Las Condes",
+    "direccion": "Estoril 450, Las Condes, Región Metropolitana",
+    "horario_atencion": "Hasta las 12:00",
+    "esterilizacion": "Sí (-2)",
+    "piso_pabellon": "",
+    "dias_anticipacion": "",
+    "contactos": {},
+    "notas": "Estacionamiento pagado"
+  },
+  "IND": {
+    "codigo": "IND",
+    "nombre": "Clínica Indisa",
+    "direccion": "Los Conquistadores 1926",
+    "horario_atencion": "",
+    "esterilizacion": "Sí (-1) por Lo Contador",
+    "piso_pabellon": "4",
+    "dias_anticipacion": "24–48 horas",
+    "contactos": {
+      "esterilizacion": "944127869"
+    },
+    "notas": "Estacionar por calle Lo Contador (proveedores)"
+  },
+  "MED": {
+    "codigo": "MED",
+    "nombre": "Clínica MEDS",
+    "direccion": "Av. José Alcalde Délano 10581, Lo Barnechea, Región Metropolitana",
+    "horario_atencion": "",
+    "esterilizacion": "Sí (piso -2)",
+    "piso_pabellon": "6",
+    "dias_anticipacion": "24 horas",
+    "contactos": {
+      "esterilizacion": "962514950"
+    },
+    "notas": "Estacionamiento 1 hora gratis"
+  },
+  "SOT": {
+    "codigo": "SOT",
+    "nombre": "Hospital Sótero del Río",
+    "direccion": "Av. Concha y Toro 3459, Puente Alto, Región Metropolitana",
+    "horario_atencion": "Lunes 16:00 / Viernes 15:00",
+    "esterilizacion": "Sí (piso 1)",
+    "piso_pabellon": "Piso 3 – Pabellón Central",
+    "dias_anticipacion": "24 horas",
+    "contactos": {
+      "esterilizacion": "Tamara Salas +56976681845"
+    },
+    "notas": "Estacionamiento Gratis (CDT), ingreso pediátrico"
+  },
+  "UAN": {
+    "codigo": "UAN",
+    "nombre": "Clínica Universidad de los Andes",
+    "direccion": "Av. Plaza 2501, Las Condes, Región Metropolitana",
+    "horario_atencion": "Hasta las 16:00",
+    "esterilizacion": "Sí (piso 1, proveedores)",
+    "piso_pabellon": "Piso 2 Torre H",
+    "dias_anticipacion": "",
+    "contactos": {},
+    "notas": "Estacionamiento 1 hora gratis"
+  },
+  "DAV": {
+    "codigo": "DAV",
+    "nombre": "Clínica Dávila",
+    "direccion": "https://maps.app.goo.gl/MjrJNQ2x3xbpprvY6",
+    "horario_atencion": "",
+    "esterilizacion": "",
+    "piso_pabellon": "",
+    "dias_anticipacion": "",
+    "notas": ""
+  }
+}

@@ -1,0 +1,198 @@
+// ===============================
+// HQSYS – PIZARRA RENDER v2.3
+// ===============================
+
+// -------- LAYOUT CONFIG --------
+const LAYOUT = {
+  columnWidth: 130,
+  rowHeight: 15,
+
+  blockHeight: 6,
+  blockGap: 1,
+
+  fontFamily: "Arial",
+  fontSize: 11,
+  notesFontSize: 9,
+
+  hAlign: "center",   // left | center | right
+  vAlign: "middle"    // top | middle | bottom
+};
+// --------------------------------
+
+// -------- TIME FORMATTER --------
+function formatTimeHHMM(value) {
+  if (!value && value !== 0) return "";
+
+  const n = Number(value);
+  if (isNaN(n)) return value;
+
+  const h = Math.floor(n / 100);
+  const m = n % 100;
+
+  if (m >= 60) return value; // safety
+
+  return `${h}:${String(m).padStart(2, "0")}`;
+}
+// --------------------------------
+
+function onOpen() {
+  SpreadsheetApp.getUi()
+    .createMenu("HQSYS")
+    .addItem("🧱 Renderizar Pizarra (reemplazar)", "renderAllSurgeries")
+    .addToUi();
+}
+
+function renderAllSurgeries() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const src = ss.getSheetByName("Cirugías");
+  if (!src) {
+    SpreadsheetApp.getUi().alert("❌ No existe la hoja 'Cirugías'");
+    return;
+  }
+
+  const data = src.getDataRange().getValues();
+  data.shift(); // headers
+
+  const MONTHS = [
+    "Enero","Febrero","Marzo","Abril","Mayo","Junio",
+    "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"
+  ];
+
+  const WEEKDAYS = [
+    "Domingo","Lunes","Martes","Miércoles",
+    "Jueves","Viernes","Sábado"
+  ];
+
+  const STATUS_COLORS = {
+    "finalizada": "#CCE5FF",
+    "suspendida": "#E2E3E5",
+    "pagada": "#CEF324"
+  };
+
+  // ---- group surgeries by month
+  const byMonth = {};
+  data.forEach(row => {
+    const [
+      cirujano, recinto, paciente,
+      dia, mes, anio,
+      hora, representante, estado, notas
+    ] = row;
+
+    if (!dia || !mes || !anio) return;
+
+    const yearFull = anio < 100 ? 2000 + Number(anio) : Number(anio);
+    const key = `${yearFull}-${mes}`;
+
+    if (!byMonth[key]) byMonth[key] = [];
+    byMonth[key].push({
+      cirujano, recinto, paciente,
+      dia: Number(dia),
+      mes: Number(mes),
+      anio: yearFull,
+      hora: Number(hora) || 0, // KEEP numeric
+      representante, estado, notas
+    });
+  });
+
+  // ---- render each month
+  Object.values(byMonth).forEach(list => {
+    const { mes, anio } = list[0];
+    const sheetName = `${MONTHS[mes - 1]} ${anio}`;
+
+    let sh = ss.getSheetByName(sheetName);
+    if (!sh) {
+      sh = ss.insertSheet(sheetName, ss.getSheets().length);
+    }
+
+    // layout safety
+    if (sh.getMaxColumns() < 32)
+      sh.insertColumnsAfter(sh.getMaxColumns(), 32 - sh.getMaxColumns());
+    if (sh.getMaxRows() < 500)
+      sh.insertRowsAfter(sh.getMaxRows(), 500 - sh.getMaxRows());
+
+    sh.setColumnWidths(2, 31, LAYOUT.columnWidth);
+    sh.setRowHeights(2, 500, LAYOUT.rowHeight);
+    sh.getRange(1,1,sh.getMaxRows(),sh.getMaxColumns())
+      .setFontFamily(LAYOUT.fontFamily)
+      .setFontSize(LAYOUT.fontSize);
+
+    // ---- HEADERS
+    const daysInMonth = new Date(anio, mes, 0).getDate();
+    const header = [""];
+    for (let d = 1; d <= daysInMonth; d++) {
+      const date = new Date(anio, mes - 1, d);
+      header.push(`${WEEKDAYS[date.getDay()]} ${String(d).padStart(2,"0")}`);
+    }
+
+    sh.getRange(1, 1, 1, header.length)
+      .setValues([header])
+      .setFontWeight("bold")
+      .setBackground("#6A6A6A")
+      .setFontColor("white")
+      .setHorizontalAlignment("center");
+
+    // ---- CLEAR PREVIOUS RENDER
+    const maxRows = sh.getMaxRows();
+    const maxCols = sh.getMaxColumns();
+    if (maxRows > 1) {
+      sh.getRange(2, 1, maxRows - 1, maxCols)
+        .clearContent()
+        .clearFormat();
+    }
+
+    // ---- group by day
+    const byDay = {};
+    list.forEach(s => {
+      if (!byDay[s.dia]) byDay[s.dia] = [];
+      byDay[s.dia].push(s);
+    });
+
+    // ---- render days
+    Object.entries(byDay).forEach(([dia, surgeries]) => {
+      const col = Number(dia) + 1;
+
+      surgeries.sort((a, b) => {
+        const aSusp = (a.estado || "").toLowerCase() === "suspendida";
+        const bSusp = (b.estado || "").toLowerCase() === "suspendida";
+        if (aSusp !== bSusp) return aSusp ? 1 : -1;
+        return a.hora - b.hora;
+      });
+
+      let rowPtr = 2;
+
+      surgeries.forEach(s => {
+        const statusKey = (s.estado || "").toLowerCase();
+        const color = STATUS_COLORS[statusKey] || "#FFFFFF";
+
+        const values = [
+          [`Dr. ${s.cirujano || ""}`],
+          [`${s.paciente || ""}`],
+          [`${s.recinto || ""}`],
+          [formatTimeHHMM(s.hora)],   // 👈 CONVERT HERE
+          [`${s.representante || ""}`],
+          [`${s.estado || ""}${s.notas ? " – " + s.notas : ""}`]
+        ];
+
+        const blockRange = sh.getRange(rowPtr, col, LAYOUT.blockHeight, 1);
+        blockRange
+          .setValues(values)
+          .setBackground(color)
+          .setBorder(true, true, true, true, false, false)
+          .setWrap(true)
+          .setHorizontalAlignment(LAYOUT.hAlign)
+          .setVerticalAlignment(LAYOUT.vAlign)
+          .setFontSize(LAYOUT.fontSize)
+          .setFontColor("#222222");
+
+        // Row-specific styling
+        sh.getRange(rowPtr, col).setFontWeight("bold");                 // Doctor
+        sh.getRange(rowPtr + 1, col).setFontStyle("italic");            // Patient
+        sh.getRange(rowPtr + 5, col).setFontSize(LAYOUT.notesFontSize); // Notes
+
+        rowPtr += LAYOUT.blockHeight + LAYOUT.blockGap;
+      });
+    });
+  });
+
+  SpreadsheetApp.getUi().alert("✅ Pizarra reemplazada correctamente.");
+}

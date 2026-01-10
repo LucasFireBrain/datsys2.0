@@ -16,7 +16,8 @@
     "contact": "",
     "notes": "Parroquial de SB",
     "projects": [
-      "251001-LPZ-X1"
+      "251001-LPZ-X1",
+      "PB13-LPZ-PK02"
     ]
   },
   "HEX": {
@@ -27,12 +28,13 @@
     "contact": "Lucas",
     "notes": "Me",
     "projects": [
-      "251003-HEX-CUSTOM1"
+      "251003-HEX-CUSTOM1",
+      "PA20-AIRF-X2"
     ]
   },
   "MDI": {
     "id": "MDI",
-    "name": "Marlene D\u00edaz",
+    "name": "Marlene Díaz",
     "email": "",
     "phone": "",
     "contact": "",
@@ -40,5 +42,151 @@
     "projects": [
       "PA7-MDI-EH0"
     ]
+  },
+  "OMX": {
+    "id": "OMX",
+    "name": "Orthomax",
+    "email": "info@orthomax.cl",
+    "phone": "",
+    "contact": "Xime",
+    "notes": "",
+    "projects": [
+      "251010-OMX-X1",
+      "PA24-OMX-HQSYS2"
+    ]
+  },
+  "FLZ": {
+    "id": "FLZ",
+    "name": "Fernanda López",
+    "email": "",
+    "phone": "",
+    "contact": "",
+    "notes": "Fer",
+    "projects": [
+      "PA28-FLZ-PLA1"
+    ]
+  },
+  "FVI": {
+    "id": "FVI",
+    "name": "Fernanda Villalobos",
+    "email": "fernandabvillalobos@gmail.com",
+    "phone": "",
+    "contact": "",
+    "notes": "nos conocimos en el Jean Delaire, residente de Maxilo de la Clínica Alemana",
+    "projects": [
+      "PB26-FVI-PK1"
+    ]
+  },
+  "PSO": {
+    "id": "PSO",
+    "name": "Pedro Solé",
+    "email": "",
+    "phone": "",
+    "contact": "",
+    "notes": "",
+    "projects": [
+      "PC03-PSO-PK1",
+      "PB14-PSO-PK1",
+      "PB30-PSO-PK2",
+      "PC03-PSO-PK3",
+      "Q108-PSO-PK4"
+    ]
+  },
+  "MTS": {
+    "id": "MTS",
+    "name": "Matias Menares",
+    "email": "",
+    "phone": "",
+    "contact": "",
+    "notes": "",
+    "projects": [
+      "Trofeos Diciembre 2025"
+    ]
+  },
+  "HKW": {
+    "id": "HKW",
+    "name": "Hokwan",
+    "email": "",
+    "phone": "",
+    "contact": "",
+    "notes": "",
+    "projects": [
+      "Alvo Dentist",
+      "Print Documents Nov 2025",
+      "Prints",
+      "Laichi Passport Photos",
+      "Car crash Jan 04 2026"
+    ]
+  },
+  "LAG": {
+    "id": "LAG",
+    "name": "Leonardo Aguilar",
+    "email": "",
+    "phone": "",
+    "contact": "",
+    "notes": "",
+    "projects": [
+      "PB20-LAG-PK1",
+      "STL Salvador Diaz"
+    ]
+  },
+  "PFA": {
+    "id": "PFA",
+    "name": "PFA",
+    "email": "",
+    "phone": "",
+    "contact": "",
+    "notes": "",
+    "projects": [
+      "PB20-PFA-PK1"
+    ]
+  },
+  "RCA": {
+    "id": "RCA",
+    "name": "Rolando Carrasco",
+    "email": "",
+    "phone": "",
+    "contact": "",
+    "notes": "",
+    "projects": [
+      "Scarlet Sandoval Post Op",
+      "Q108-RCA-PK1"
+    ]
+  },
+  "MSZ": {
+    "id": "MSZ",
+    "name": "Martin Sanchez",
+    "projects": [
+      "PC13-MSZ-PK1"
+    ]
+  },
+  "AFU": {
+    "id": "AFU",
+    "name": "Alberto Fuhrer",
+    "projects": [
+      "PC18-AFU-PK1"
+    ]
+  },
+  "CVE": {
+    "id": "CVE",
+    "name": "Cristian Venables",
+    "projects": [
+      "PC18-CVE-PK1",
+      "PC19-CVE-PK1"
+    ]
+  },
+  "MLZ": {
+    "id": "MLZ",
+    "projects": [
+      "PC23-MLZ-PK1"
+    ]
+  },
+  "Exports": {
+    "id": "Exports",
+    "projects": []
+  },
+  "_Exports": {
+    "id": "_Exports",
+    "projects": []
   }
 }

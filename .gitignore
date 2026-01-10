@@ -1,0 +1,18 @@
+# Ignore a specific file
+secrets.txt
+
+# Ignore all files with a certain extension
+*.log
+*.tmp
+
+# Ignore an entire directory
+Clients/
+Exports/
+templates/
+__pycache__/
+
+# Ignore files in any directory with this name
+**/cache/
+
+# Ignore files anywhere in the project
+**/*.backup

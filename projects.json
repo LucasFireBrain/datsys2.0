@@ -22,5 +22,222 @@
     "created_at": "2025-10-08T11:18:08.727161",
     "created_by": "Lucas",
     "template": "default.json"
+  },
+  "251010-OMX-X1": {
+    "id": "251010-OMX-X1",
+    "client_id": "OMX",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\OMX\\251010-OMX-X1",
+    "created_at": "2025-10-10T14:17:59.228076",
+    "created_by": "Lucas",
+    "template": "default.json"
+  },
+  "PA20-AIRF-X2": {
+    "id": "PA20-AIRF-X2",
+    "client_id": "HEX",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\HEX\\PA20-AIRF-X2",
+    "created_at": "2025-10-20T07:43:06.979122",
+    "created_by": "Lucas",
+    "template": "default.json"
+  },
+  "PA24-OMX-HQSYS2": {
+    "id": "PA24-OMX-HQSYS2",
+    "client_id": "OMX",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\OMX\\PA24-OMX-HQSYS2",
+    "created_at": "2025-10-24T10:13:30.814757",
+    "created_by": "Lucas",
+    "template": "default.json"
+  },
+  "PA28-FLZ-PLA1": {
+    "id": "PA28-FLZ-PLA1",
+    "client_id": "FLZ",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\FLZ\\PA28-FLZ-PLA1",
+    "created_at": "2025-10-28T12:29:03.607442",
+    "created_by": "Lucas",
+    "template": "default.json"
+  },
+  "PA13-LPZ-PK02": {
+    "id": "PA13-LPZ-PK02",
+    "client_id": "LPZ",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\LPZ\\PA13-LPZ-PK02",
+    "created_at": "2025-11-13T07:56:00.198059",
+    "created_by": "Lucas",
+    "template": "default.json"
+  },
+  "PB14-PSO-PK1": {
+    "id": "PB14-PSO-PK1",
+    "client_id": "PSO",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\PSO\\PB14-PSO-PK1",
+    "created_at": "2025-11-14T10:57:42.885838",
+    "created_by": "Lucas",
+    "template": "PK"
+  },
+  "PB20-LAG-PK1": {
+    "id": "PB20-LAG-PK1",
+    "client_id": "LAG",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\LAG\\PB20-LAG-PK1",
+    "created_at": "2025-11-20T10:54:35.563696",
+    "created_by": "Lucas",
+    "template": "PK"
+  },
+  "PB20-PFA-PK1": {
+    "id": "PB20-PFA-PK1",
+    "client_id": "PFA",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\PFA\\PB20-PFA-PK1",
+    "created_at": "2025-11-20T12:01:53.837673",
+    "created_by": "Lucas",
+    "template": "PK"
+  },
+  "PB26-FVI-PK1": {
+    "id": "PB26-FVI-PK1",
+    "client_id": "FVI",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\FVI\\PB26-FVI-PK1",
+    "created_at": "2025-11-26T12:45:51.695745",
+    "created_by": "Lucas",
+    "template": "PK"
+  },
+  "PC03-PSO-PK1": {
+    "id": "PC03-PSO-PK1",
+    "client_id": "PSO",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\PSO\\PC03-PSO-PK1",
+    "created_at": "2025-12-03T02:57:31.656135",
+    "last_opened": "2025-12-03T02:57:31.656135",
+    "template": "PK"
+  },
+  "Alvo Dentist": {
+    "id": "Alvo Dentist",
+    "client_id": "HKW",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\HKW\\Alvo Dentist",
+    "created_at": "2025-12-06T10:17:53.288788",
+    "last_opened": "2025-12-06T10:17:53.288788",
+    "template": ""
+  },
+  "Print Documents Nov 2025": {
+    "id": "Print Documents Nov 2025",
+    "client_id": "HKW",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\HKW\\Print Documents Nov 2025",
+    "created_at": "2025-12-06T10:17:53.288788",
+    "last_opened": "2025-12-06T10:17:53.288788",
+    "template": ""
+  },
+  "Prints": {
+    "id": "Prints",
+    "client_id": "HKW",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\HKW\\Prints",
+    "created_at": "2025-12-06T10:17:53.288788",
+    "last_opened": "2025-12-06T10:17:53.288788",
+    "template": ""
+  },
+  "STL Salvador Diaz": {
+    "id": "STL Salvador Diaz",
+    "client_id": "LAG",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\LAG\\STL Salvador Diaz",
+    "created_at": "2025-12-06T10:17:53.288788",
+    "last_opened": "2025-12-06T10:17:53.288788",
+    "template": ""
+  },
+  "PB13-LPZ-PK02": {
+    "id": "PB13-LPZ-PK02",
+    "client_id": "LPZ",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\LPZ\\PB13-LPZ-PK02",
+    "created_at": "2025-11-13T07:56:00.198059",
+    "last_opened": "2025-11-13T07:56:00.198059",
+    "template": "default.json"
+  },
+  "Trofeos Diciembre 2025": {
+    "id": "Trofeos Diciembre 2025",
+    "client_id": "MTS",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\MTS\\Trofeos Diciembre 2025",
+    "created_at": "2025-12-06T10:17:53.298064",
+    "last_opened": "2025-12-06T15:49:53.483349",
+    "template": ""
+  },
+  "PB30-PSO-PK2": {
+    "id": "PB30-PSO-PK2",
+    "client_id": "PSO",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\PSO\\PB30-PSO-PK2",
+    "created_at": "2025-12-06T10:17:53.298064",
+    "last_opened": "2025-12-10T06:18:27.666610",
+    "template": ""
+  },
+  "Scarlet Sandoval Post Op": {
+    "id": "Scarlet Sandoval Post Op",
+    "client_id": "RCA",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\RCA\\Scarlet Sandoval Post Op",
+    "created_at": "2025-12-06T10:17:53.298064",
+    "last_opened": "2025-12-06T10:17:53.298064",
+    "template": ""
+  },
+  "Laichi Passport Photos": {
+    "id": "Laichi Passport Photos",
+    "client_id": "HKW",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\HKW\\Laichi Passport Photos",
+    "created_at": "2025-12-10T06:14:32.878027",
+    "last_opened": "2025-12-10T06:14:32.878027",
+    "template": ""
+  },
+  "PC03-PSO-PK3": {
+    "id": "PC03-PSO-PK3",
+    "client_id": "PSO",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\PSO\\PC03-PSO-PK3",
+    "created_at": "2025-12-03T02:57:31.656135",
+    "last_opened": "2025-12-03T02:57:31.656135",
+    "template": "PK"
+  },
+  "PC13-MSZ-PK1": {
+    "id": "PC13-MSZ-PK1",
+    "client_id": "MSZ",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\MSZ\\PC13-MSZ-PK1",
+    "created_at": "2025-12-13T12:40:55.220440",
+    "last_opened": "2025-12-29T22:25:56.665922",
+    "template": "PK"
+  },
+  "PC18-AFU-PK1": {
+    "id": "PC18-AFU-PK1",
+    "client_id": "AFU",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\AFU\\PC18-AFU-PK1",
+    "created_at": "2025-12-18T14:02:44.219448",
+    "last_opened": "2025-12-18T14:10:04.113231"
+  },
+  "PC18-CVE-PK1": {
+    "id": "PC18-CVE-PK1",
+    "client_id": "CVE",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\CVE\\PC18-CVE-PK1",
+    "created_at": "2025-12-18T16:21:39.086136",
+    "last_opened": "2025-12-18T16:21:44.644507"
+  },
+  "PC19-CVE-PK1": {
+    "id": "PC19-CVE-PK1",
+    "client_id": "CVE",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\CVE\\PC19-CVE-PK1",
+    "created_at": "2025-12-19T07:58:03.907345",
+    "last_opened": "2025-12-20T02:00:24.600609"
+  },
+  "PC23-MLZ-PK1": {
+    "id": "PC23-MLZ-PK1",
+    "client_id": "MLZ",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\MLZ\\PC23-MLZ-PK1",
+    "created_at": "2025-12-23T12:12:14.337044",
+    "last_opened": "2026-01-02T11:38:19.715312"
+  },
+  "Car crash Jan 04 2026": {
+    "id": "Car crash Jan 04 2026",
+    "client_id": "HKW",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\HKW\\Car crash Jan 04 2026",
+    "created_at": "2026-01-08T18:45:07.695504",
+    "last_opened": "2026-01-08T18:45:07.695504"
+  },
+  "Q108-RCA-PK1": {
+    "id": "Q108-RCA-PK1",
+    "client_id": "RCA",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\RCA\\Q108-RCA-PK1",
+    "created_at": "2026-01-08T18:45:43.849582",
+    "last_opened": "2026-01-08T18:54:09.379518"
+  },
+  "Q108-PSO-PK4": {
+    "id": "Q108-PSO-PK4",
+    "client_id": "PSO",
+    "path": "C:\\Users\\Lucas\\Desktop\\Hexamod\\Clients\\Hexamod\\Datsys\\Clients\\PSO\\Q108-PSO-PK4",
+    "created_at": "2026-01-08T20:33:36.066539",
+    "last_opened": "2026-01-09T05:09:16.608841"
   }
 }
